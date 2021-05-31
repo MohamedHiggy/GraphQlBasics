@@ -3,7 +3,7 @@
     <div v-if="rocket">
         <h2>{{rocket.name}}</h2>
         <h2>{{rocket.description}}</h2>
-        <h2>{{rocket.constPerLaunc}}</h2>
+        <h2>{{rocket.costPerLaunch}}</h2>
     </div>
    </div>
 </template>

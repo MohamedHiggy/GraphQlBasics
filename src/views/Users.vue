@@ -1,5 +1,4 @@
 <template>
-  <div class="container">
     <div class="row">
       <div class="col-4">
         <user-form />
@@ -8,7 +7,6 @@
         <user-list />
       </div>
     </div>
-  </div>
 </template>
 
 <script>

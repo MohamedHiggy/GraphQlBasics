@@ -5,6 +5,7 @@ export const GET_ROCKETS = gql `
     rockets {
       id
       name
+      description
     }
   }
 `

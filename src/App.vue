@@ -5,7 +5,9 @@
       <router-link to="/rockets">Rockets</router-link> |
       <router-link to="/users">Users</router-link>
     </div>
-    <router-view/>
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 

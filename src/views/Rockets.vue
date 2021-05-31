@@ -1,5 +1,5 @@
 <template>
-  <div class="rockets">
+  <div>
     <rocket-list />
   </div>
 </template>

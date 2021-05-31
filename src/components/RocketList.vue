@@ -1,9 +1,18 @@
 <template>
   <ul>
     <li v-for="rocket in rockets" :key="rocket.id">
-      <router-link :to="{ name: 'Rocket', params: { id: rocket.id } }">
-        <h2>🚀 {{ rocket.name }}</h2>
-      </router-link>
+      <div class="card">
+        <div class="card-header">
+          <router-link :to="{ name: 'Rocket', params: { id: rocket.id } }">
+            🚀 {{ rocket.name }}
+          </router-link>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>{{ rocket.description.substring(1, 25).concat('....') }}</p>
+          </blockquote>
+        </div>
+      </div>
     </li>
   </ul>
 </template>
@@ -15,9 +24,11 @@ export default {
     rockets: {
       query: GET_ROCKETS
     }
-  }
+  },
 }
 </script>
 <style lang="scss" scoped>
-
+li {
+  margin: 10px 0;
+}
 </style>
