@@ -4,8 +4,9 @@ import router from './router'
 import store from './store'
 import VueApollo from 'vue-apollo'
 import ApolloClient from 'apollo-boost'
+
+
 const apolloClient = new ApolloClient({
-    // You should use an absolute URL here
     uri: 'https://api.spacex.land/graphql'
 })
 
