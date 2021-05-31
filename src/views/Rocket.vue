@@ -1,13 +1,13 @@
 <template>
   <div class="rockets">
-    <rocket-list />
+    <rocket-item />
   </div>
 </template>
 <script>
-import RocketList from "@/components/RocketList.vue"
+import RocketItem from "@/components/RocketItem.vue"
 export default {
   components: {
-    RocketList
+    RocketItem
   }
 }
 </script>
